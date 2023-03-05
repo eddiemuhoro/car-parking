@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+
+header h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 28px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav li {
+	margin-left: 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #f1c40f;
+}
+
+main {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+#banner {
+	background-image: url(https://cdn.hibuwebsites.com/59c0c2597a0e4406ac9fe74f5d2c00a0/dms3rep/multi/mobile/video-herov3.jpg);
+	background-size: cover;
+	background-position: center;
+	color: #f3f3f3;
+  height: 40vh;
+	text-align: center;
+	padding: 100px 0;
+  margin: 50px 0;
+}
+
+#banner h2 {
+	font-size: 48px;
+	margin: 0;
+	padding: 0;
+}
+
+#banner p {
+	font-size: 24px;
+	margin-top: 20px;
+  
+}
+
+.button {
+	display: inline-block;
+	background-color: #f1c40f;
+	color: #333;
+	padding: 10px 20px;
+	margin-top: 20px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+.button:hover {
+	background-color: #333;
+	color: #fff;
+}
+
+#features {
+	display: flex;
+  justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 50px auto;
+  background-color: #f9f9f9;
+
+}
+
+.feature-box {
+	flex-basis: 30%;
+	background-color: #ffffff;
+	margin: 1%;
+	padding: 50px;
+	text-align: center;
+}
+
+.feature-box img {
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+#cta {
+	background-color: #f1c40f;
+	color: #fff;
+	text-align: center;
+	padding: 100px 0;
+}
+
+#cta h2 {
+	font-size: 48px;
+	margin: 0;
+	padding: 0;
+}
+
+#testimonials {
+	background-color: #f9f9f9;
+	color: #333;
+	padding: 50px;
+	text-align: center;
+}
+
+#testimonials h2 {
+	font-size: 36px;
+	margin: 0;
+	padding: 0;
+}
+
+.testimonial-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.testimonial-box blockquote {
+	font-size: 24px;
+	margin: 0;
+	padding: 0;
+}
+
+.testimonial-box p {
+	font-size: 18px;
+	margin-top: 20px;
+	font-style: italic;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+
+footer p {
+	margin: 0;
+	padding: 0;
+}
+
+#social-media {
+	display: flex;
+}
+
+#social-media a {
+  color: white;
+  text-decoration: none;
+	height: 30px;
+	margin-left: 10px;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+		<h1>Car Parking System</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section id="banner">
+			<h2>Park Your Car with Ease</h2>
+			<p>Our car parking system provides a hassle-free parking experience. Book your spot now!</p>
+			<a href="#" class="button">Book Now</a>
+		</section>
+    <h2>Features</h2>
+		<section id="features">
+		
+			<div class="feature-box">
+				<img src="https://www.startraining.edu.au/wp-content/uploads/2022/09/secu.jpg">
+				<h3>24/7 Security</h3>
+				<p>Our parking facility is equipped with CCTV cameras and security personnel for your safety.</p>
+			</div>
+
+			<div class="feature-box">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Valet_Ferrari.png">
+				<h3>Valet Parking</h3>
+				<p>Our valet service ensures that your car is parked safely and securely while you enjoy your day.</p>
+			</div>
+
+			<div class="feature-box">
+				<img src="https://i2-prod.dailyrecord.co.uk/incoming/article22650180.ece/ALTERNATES/s615/0_parkingSouthLan.jpg">
+				<h3>Charging Stations</h3>
+				<p>We provide charging stations for electric vehicles to ensure that you never run out of power.</p>
+			</div>
+
+      <div class="feature-box">
+				<img src="https://i2-prod.dailyrecord.co.uk/incoming/article22650180.ece/ALTERNATES/s615/0_parkingSouthLan.jpg">
+				<h3>Charging Stations</h3>
+				<p>We provide charging stations for electric vehicles to ensure that you never run out of power.</p>
+			</div>
+		</section>
+
+		<section id="cta">
+			<h2>Book Your Spot Now!</h2>
+			<a href="#" class="button">Book Now</a>
+		</section>
+
+		<section id="testimonials">
+			<h2>What Our Customers Say</h2>
+			<div class="testimonial-box">
+				<blockquote>"I have been using this parking facility for a year now, and I have never had any issues. The staff is courteous, and my car is always safe and secure."</blockquote>
+				<p>- John Doe</p>
+			</div>
+
+			<div class="testimonial-box">
+				<blockquote>"I love the valet service provided by this parking facility. It saves me a lot of time and hassle."</blockquote>
+				<p>- Jane Smith</p>
+			</div>
+
+			<div class="testimonial-box">
+				<blockquote>"The charging stations provided by this parking facility are a lifesaver for my electric car. I never have to worry about running out of power."</blockquote>
+				<p>- Bob Johnson</p>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<p>Copyright &copy; 2023 Car Parking System.
+
+		<div id="social-media">
+			<a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-instagram"></a>
+		</div>
+	</footer>
+</body>
+</html>
